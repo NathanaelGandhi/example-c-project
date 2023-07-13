@@ -9,5 +9,6 @@ BasedOnStyle: Google
 Language: Cpp
 IndentWidth: 4
 UseTab: Never
-ColumnLimit: 120
+ColumnLimit: 80
+ReferenceAlignment: Right
 ################################################################################

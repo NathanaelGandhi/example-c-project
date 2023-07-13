@@ -1,3 +1,0 @@
-/workspaces/cpp/build/CMakeFiles/rebuild_cache.dir
-/workspaces/cpp/build/CMakeFiles/edit_cache.dir
-/workspaces/cpp/build/CMakeFiles/cpp.dir

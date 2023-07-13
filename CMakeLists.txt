@@ -5,15 +5,17 @@ project(${CURRENT_DIR_NAME})
 
 # Set project sources
 set(PROJECT_SOURCES
-    "src/main.c"
+    "app/src/app.c"
+    "app/src/example_class.c"
+    "app/utils/oom_guard/oom_guard.c"
 )
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 
 target_compile_options(${PROJECT_NAME} PRIVATE 
     -std=c99                # Target the C99 standard (without gcc extensions)
-    -pedantic               # Issue all the warnings demanded by strict ISO C
-    -Wall                   # Warn about most questionable operations
+    # -pedantic               # Issue all the warnings demanded by strict ISO C
+    # -Wall                   # Warn about most questionable operations
     # -Wstrict-prototypes     # Warn about missing prototypes
     # -Wwrite-strings         # Warn if not treating string literals as "const"
     # -Wpointer-arith         # Warn about suspicious pointer operations
@@ -21,4 +23,7 @@ target_compile_options(${PROJECT_NAME} PRIVATE
     # -Werror                 # Treat warnings as errors (code should be clean)
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC "inc")
+target_include_directories(${PROJECT_NAME} PUBLIC 
+    "app/inc"
+    "app/utils/oom_guard"
+)
