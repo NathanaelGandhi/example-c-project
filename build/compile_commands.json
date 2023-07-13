@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/cpp/build",
+  "command": "/usr/bin/gcc -I../inc -g -std=c99 -pedantic -Wall -o CMakeFiles/cpp.dir/src/main.c.o -c /workspaces/cpp/src/main.c",
+  "file": "/workspaces/cpp/src/main.c"
+}
+]
