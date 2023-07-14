@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.16)
+set(CMAKE_C_COMPILER "gcc")
 
 get_filename_component(CURRENT_DIR_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
-project(${CURRENT_DIR_NAME})
+project(${CURRENT_DIR_NAME} C)
 
 # Set project sources
 set(PROJECT_SOURCES
